@@ -1,3 +1,5 @@
+"use strict";
+
 describe("An example spec", function() {
   it("confirms 1 === 1", function() {
     expect(1).toEqual(1);
