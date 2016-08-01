@@ -1,46 +1,39 @@
-# GO-Project-LG
-Created a GO game
+# TicTacToe Game 
 
 ## Description
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Go-board-animated.gif/120px-Go-board-animated.gif)
-
-Two people can play [Go](https://en.wikipedia.org/wiki/Go_(game)) on the same webpage.
+Two people can play TicTacToe on the same webpage.
 
 AND/OR 
 
-One person can play [Go](https://en.wikipedia.org/wiki/Go_(game)) against an AI player. 
+One person can play TicTacToe(https://en.wikipedia.org/wiki/Tic-tac-toe) against an AI player. 
 
 ## Context
 
-[Go](https://en.wikipedia.org/wiki/Go_(game)) is an existing, fixed feature set. 
+[Tic-Tac-Toe](https://en.wikipedia.org/wiki/Tic-tac-toe) is an existing, fixed feature set. 
 
-A [Go](https://en.wikipedia.org/wiki/Go_(game)) game can be implemented in almost any web technologies. 
+A [Tic-Tac_Toe](https://en.wikipedia.org/wiki/Go_(game)) game can be implemented in almost any web technologies. 
 
-The team can scale the difficulty of the specs along a large range of complexity
 
-```
-[no game logic]<----------->[working game logic with an AI opponent]
-```
+## User Stories
+
+- [ ] Bob wants to play Tic-Tac-Toe with a beautiful UI that is responsive and elegant
+- [ ] Bob wants to be able to choose who starts whether another player or the AI
+- [ ] Bob wants a difficult AI opponnent but not an impossible one
+- [ ] Bob wants with his friends either cross-country or internationally
 
 ## Specifications
 
-- [ ] reverse engineer [Go](https://en.wikipedia.org/wiki/Go_(game)) into a complete set of users stories
-- [ ] players can decide between 9x9, 13x13 or 17x17 board size
-- [ ] Make the board scale to the window size
-
-## Optional Specifications
-
-- [ ] two player games work on
-- [ ] persist the state of the game so reloading the page resumes where you left off
-- [ ] each game has a unique, individual url (like bit.ly)
-- [ ] allow users to provide their email address and then display their Gravatar
-
-
-### Required
-
+- [ ] reverse engineer [Tic-Tac-Toe](https://en.wikipedia.org/wiki/Tic-tac-toe) into a complete set of users stories
+- [ ] Build a node starter app from the ground up for future project use
+- [ ] Outline how we created the design interface
+- [ ] Build and implement a difficult AI opponnent 
+- [ ] Need to define rules of the game and how to win (for AI)
+- [ ] Feature a replay button 
+- [ ] Create a scoring system that keeps track of games won by human and AI opponnents
+- [ ] Using ES2015 and writing tests 
+- [ ] Research and document how we would implement a multi-game server.
 - [ ] The artifact produced is properly licensed, preferably with the [MIT license][mit-license].
-
 
 ### Quality
 
