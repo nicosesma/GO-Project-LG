@@ -1,19 +1,19 @@
 {
   "name": "GO-Project-LG",
-  "version": "1.0.0",
+  "version": "0.8.0",
   "babel": {
     "presets": ["es2015"]
   },
   "description": "## Description",
   "main": "index.js",
   "scripts": {
-    "test": "JASMINE_CONFIG_PATH=src/spec/support/jasmine.json jasmine",
-    "start": "nodemon src/index.js",
-    "buildwatch": "babel src -d src -w --copy-files"
+    "test": "JASMINE_CONFIG_PATH=dist/spec/support/jasmine.json jasmine",
+    "start": "nodemon dist/index.js",
+    "buildwatch": "babel src -d dist -w --copy-files"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nicosesma/GO-Project-LG.git"
+    "url": "https://github.com/nicosesma/GO-Project-LG.git"
   },
   "keywords": [],
   "author": "Mihai Banulescu <mihai.banulescu@gmail.com> (http://github.com/bluemihai)",
