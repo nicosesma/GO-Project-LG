@@ -1,30 +1,26 @@
 export class Board {
   constructor() {
     this.board = [
-      [null, null, null],
-      [null, 'X', null],
-      [null, null, 'O']
+      null, null, null,
+      null, null, null,
+      null, null, null
     ]
     this.xsTurn = true
   }
 
   nextToMove() {
-    this.xsTurn ? 'X' : 'O'
+    return this.xsTurn ? 'X' : 'O'
   }
 
   isEmpty() {
-    // console.log('inside this.isEmpty')
-    // console.log(this.board)
-    // return (this.board === [
-    //   [null, null, null],
-    //   [null, null, null],
-    //   [null, null, null]
-    // ])
+    console.log('inside this.isEmpty')
+    console.log(this.board)
+    return this.board.filter(function(cell){ return cell === null }).length === 9;
   }
 
   display() {
     console.log(this.board)
-  }  
+  }
 
   place(letter, x, y) {
     this.board[y][x] = letter
@@ -42,7 +38,7 @@ export class Board {
   }
 
   rowToScore(row, mine) {
-    
+
   }
 
 }
