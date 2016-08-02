@@ -1,6 +1,6 @@
-var express = require('express');
-var app = express();
-var path = require('path');
+const express = require('express');
+const app = express();
+const path = require('path');
 
 const displayBoard = () => "XOX<br>OXO<br>  X"
 
@@ -23,6 +23,3 @@ app.get('/games/new', function (req, res) {
   console.log('Hitting /board/new')
   let b = new Board()
 });
-
-
-let b = new Board()
