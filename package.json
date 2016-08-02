@@ -2,7 +2,9 @@
   "name": "GO-Project-LG",
   "version": "0.8.0",
   "babel": {
-    "presets": ["es2015"]
+    "presets": [
+      "es2015"
+    ]
   },
   "description": "## Description",
   "main": "index.js",
@@ -23,7 +25,8 @@
   },
   "homepage": "https://github.com/nicosesma/GO-Project-LG#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "pug": "^2.0.0-beta4"
   },
   "devDependencies": {
     "babel-cli": "^6.11.4",

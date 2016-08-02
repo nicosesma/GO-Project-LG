@@ -7,11 +7,12 @@ const displayBoard = () => "XOX<br>OXO<br>  X"
 import { Board } from './board'
 
 app.set('port', process.env.PORT || 3000);
-
+app.set('view engine', 'pug');
+app.set('views', path.join(__dirname, 'views'))
 app.use(express.static(path.join(__dirname, '/public')));
 
 app.get('/', function (req, res) {
-  res.send(displayBoard());
+  res.render('index');
 });
 
 app.listen(3000, function () {

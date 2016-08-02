@@ -1,16 +1,14 @@
 "use strict";
 
-$( document ).ready(function() {
-  console.log('Running...')
-  $.get('/games/new', function (result) {
-      console.log('Got my ajax request', result)
+$(document).ready(function(){
+  $('.square').click(function() {
+    let value = $(this).html()
+    $(this).html(value === 'X' ? 'O' : 'X')
   })
-
-  // let boardDiv = $('#board')
-  // console.log(boardDiv)
-  // boardDiv.html('Hola')
-  // console.log(boardDiv)
-  // let boardDiv = $('#board')
-  // console.log(boardDiv)
-  // boardDiv.html(displayBoard)
 })
+
+let createTable = ()=>{
+  $.get('/games/new', function (result) {
+    console.log('Got my ajax request', result)
+  })
+}
