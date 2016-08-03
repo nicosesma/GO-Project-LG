@@ -1,7 +1,45 @@
-.square {
+/*.square {
   color: red;
-}
+}*/
 
 /*.board {
   border: solid 2px;
 }*/
+
+.square{
+    width:100px;
+    height:100px;
+    color: black;
+}
+
+.v{
+    border-left:1px solid #000;
+    border-right:1px solid #000;
+    color: red;
+}
+
+.h{
+    border-top:1px solid #000;
+    border-bottom:1px solid #000;
+    color: blue;
+}
+
+.board {
+    display: inline-block;
+    margin-top:2%;
+
+}
+
+table {
+    background-color: #FAFAFA;
+    text-align:center;
+      font: 400 30px/1.5 'Pacifico', Helvetica, sans-serif;
+}
+
+.invisible {
+    visibility:hidden;
+}
+
+.visible {
+    visibility:visible;
+}
