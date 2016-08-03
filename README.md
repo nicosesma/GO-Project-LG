@@ -1,18 +1,18 @@
-# TicTacToe Game 
+# TicTacToe Game
 
 ## Description
 
 Two people can play TicTacToe on the same webpage.
 
-AND/OR 
+AND/OR
 
-One person can play TicTacToe(https://en.wikipedia.org/wiki/Tic-tac-toe) against an AI player. 
+One person can play TicTacToe(https://en.wikipedia.org/wiki/Tic-tac-toe) against an AI player.
 
 ## Context
 
-[Tic-Tac-Toe](https://en.wikipedia.org/wiki/Tic-tac-toe) is an existing, fixed feature set. 
+[Tic-Tac-Toe](https://en.wikipedia.org/wiki/Tic-tac-toe) is an existing, fixed feature set.
 
-A [Tic-Tac_Toe](https://en.wikipedia.org/wiki/Go_(game)) game can be implemented in almost any web technologies. 
+A [Tic-Tac_Toe](https://en.wikipedia.org/wiki/Go_(game)) game can be implemented in almost any web technologies.
 
 
 ## User Stories
@@ -29,9 +29,9 @@ A [Tic-Tac_Toe](https://en.wikipedia.org/wiki/Go_(game)) game can be implemented
 - [ ] Outline how we created the design interface
 - [ ] Build and implement a difficult AI opponnent 
 - [ ] Need to define rules of the game and how to win (for AI)
-- [ ] Feature a replay button 
+- [ ] Feature a replay button
 - [ ] Create a scoring system that keeps track of games won by human and AI opponnents
-- [ ] Using ES2015 and writing tests 
+- [ ] Using ES2015 and writing tests
 - [ ] Research and document how we would implement a multi-game server.
 - [ ] The artifact produced is properly licensed, preferably with the [MIT license][mit-license].
 

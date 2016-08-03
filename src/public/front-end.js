@@ -111,7 +111,7 @@ $(document).ready(function(){
         //       $('#newGame').removeClass('invisible');
       }
     $('#newGame').click(function(){
-        $('.square').html('');
+        $('.square').html('');    
     });
 
 });
