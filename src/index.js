@@ -6,8 +6,6 @@ const displayBoard = () => "XOX<br>OXO<br>  X"
 
 import { Board } from './board'
 
-var port = process.env.PORT || 3000
-
 app.set('port', process.env.PORT || 3000);
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'))
@@ -26,4 +24,4 @@ app.get('/games/new', function (req, res) {
   let b = new Board()
 });
 
-app.listen(process.env.PORT || 3000);
+app.listen(app.get('port'));
