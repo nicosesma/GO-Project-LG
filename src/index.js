@@ -26,4 +26,4 @@ app.get('/games/new', function (req, res) {
   let b = new Board()
 });
 
-app.listen(port)
+app.listen(process.env.PORT || 3000);
