@@ -1,22 +1,13 @@
 "use strict";
 
-let createTable = ()=>{
-  $.get('/games/new', function (result) {
-    console.log('Got my ajax request', result)
-  })
+export class Game {
+  constructor() {
+    this.board = '.........'
+  }
 }
-
-// $(document).ready(function(){
-//   $('.square').click(function() {
-//     let value = $(this).html()
-//     $(this).html(value === 'X' ? 'O' : 'X')
-//   })
-// })
-//
 
 $(document).ready(function(){
     var turnCount=0;
-
 
       $('.board').find('td').click(function(){
         if ($(this).html() === "") {
@@ -113,5 +104,4 @@ $(document).ready(function(){
     $('#newGame').click(function(){
         $('.square').html('');
     });
-
 });
