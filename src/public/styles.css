@@ -6,6 +6,13 @@
   border: solid 2px;
 }*/
 
+.container {
+  display: flex;
+  flex-position: center;
+  display: - webkit-flex;
+  align-content: center;
+}
+
 .square{
     width:100px;
     height:100px;
@@ -26,18 +33,20 @@
 
 .board {
     display: inline-block;
-    margin-top:2%;
-
+    margin-top: 2%;
+    display: flex;
+    align-content: center;
 }
 
 table {
     background-color: #FAFAFA;
-    text-align:center;
-      font: 400 30px/1.5 'Pacifico', Helvetica, sans-serif;
+    text-align: center;
+    font: 400 30px/1.5 'Pacifico', Helvetica, sans-serif;
+    align-content: center;
 }
 
 .invisible {
-    visibility:hidden;
+    visibility: hidden;
 }
 
 .visible {
