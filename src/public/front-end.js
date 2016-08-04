@@ -19,7 +19,7 @@ $(document).ready(function(){
   var turnCount=0;
 
   let g = new Game()
-  console.log('g.board', g.board)    
+  console.log('g.board', g.board)
 
       $('.board').find('td').click(function(){
         if ($(this).html() === "") {
