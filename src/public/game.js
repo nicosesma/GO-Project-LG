@@ -1,3 +1,7 @@
+String.prototype.replaceAt = function (index, character) {
+  return this.substr(0, index) + character + this.substr(index + character.length);
+};
+
 "use strict";
 
 class Game {
@@ -11,35 +15,37 @@ class Game {
   }
 
   place(position) {
-    // (position is 0-8)
     // MAYBE check if move is valid i.e. square is free - or maybe you trust the UI
-    // you know what to place by using this.xNext
-    // at the end, make sure you flip this.xNext
-    console.log('this.xNext', this.xNext)
-    console.log('this.xo()', this.xo())
-    let array = this.board.split('')
-    array[position] = this.xo()
-    this.board = array.join('')
+    this.board = this.board.replaceAt(position, this.xo())
     this.xNext = !this.xNext
   }
 
-  bestMove() {
-    this.board = 'XX.......';
-    this.xNext = function() {
-      g.place(3)
+  makeBestMove() {
+    // easy version
+    // find the first dot
+    let indexOfFirstDot = this.board.indexOf('.')
+
+    if (indexOfFirstDot == -1) {
+      return false
+    } else {
+      this.place(indexOfFirstDot)
+      return true
     }
+
     // count each of the 8 available lines
     // count your pieces vs opponent's
       // if 2-0 for you, win
       // if 0-2, block immediately
       // if multiple 0-1s, choose (randomly?) between them and block
       // otherwise choose between your 1-0s
+    // return an integer representing position of desired move
   }
 
-  zeroPlayer() {
-    // actually simulate the game
-    // write a very simplistic bestMove - first available square?? - so you can test this
-    // have fun with it
+  autoPlay() {
+    let stillGoing = true
+    while (stillGoing === true) {
+      stillGoing = this.makeBestMove()
+    }
   }
 
   gameOver() {
