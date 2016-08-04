@@ -9,7 +9,7 @@
   "description": "## Description",
   "main": "dist/index.js",
   "scripts": {
-    "test": "JASMINE_CONFIG_PATH=dist/spec/support/jasmine.json jasmine",
+    "test": "./node_modules/karma/bin/karma start --browsers Chrome dist/spec/support/karma.conf.js",
     "dev": "nodemon dist/index.js",
     "start": "node dist/index.js",
     "buildwatch": "babel src -d dist -w --copy-files"
@@ -35,6 +35,10 @@
     "babel-cli": "^6.11.4",
     "babel-preset-es2015": "^6.9.0",
     "jasmine": "^2.4.1",
+    "jasmine-core": "^2.4.1",
+    "karma": "^1.1.2",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-jasmine": "^1.0.2",
     "nodemon": "^1.10.0"
   }
 }
