@@ -5,14 +5,22 @@ class Game {
     this.board = '.........'
     this.xNext = true // this could even actually be a function instead
   }
+  
+  xo() {
+    return this.xNext ? 'X' : 'O'
+  }
 
   place(position) {
     // (position is 0-8)
     // MAYBE check if move is valid i.e. square is free - or maybe you trust the UI
     // you know what to place by using this.xNext
     // at the end, make sure you flip this.xNext
-    this.board == board;
-    this.currentState.board
+    console.log('this.xNext', this.xNext)
+    console.log('this.xo()', this.xo())
+    let array = this.board.split('')
+    array[position] = this.xo()
+    this.board = array.join('')
+    this.xNext = !this.xNext
   }
 
   bestMove() {
@@ -38,25 +46,25 @@ class Game {
     // return true if no . in this.board
   }
 }
-
-let player = human;
-let comp = computer;
-
-function getState(td) {
-  if ($('td').html() === "")  {
-    if (turnCount % 2 === 0){
-      $(this).html('X');
-      checkVictory('X');
-    } else {
-   //player 2's turn (O)
-      $(this).html('O');
-      checkVictory('O');
-    }
-    ($(this).html("O"));
-    checkVictory("O");
-  }
-}
-console.log('Bloopers')
+//
+// let player = human;
+// let comp = computer;
+//
+// function getState(td) {
+//   if ($('td').html() === "")  {
+//     if (turnCount % 2 === 0){
+//       $(this).html('X');
+//       checkVictory('X');
+//     } else {
+//    //player 2's turn (O)
+//       $(this).html('O');
+//       checkVictory('O');
+//     }
+//     ($(this).html("O"));
+//     checkVictory("O");
+//   }
+// }
+// console.log('Bloopers')
 
 // $(function() {
 //
