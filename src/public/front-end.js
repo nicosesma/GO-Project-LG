@@ -1,6 +1,7 @@
 "use strict";
 
-let createTable = ()=>{
+
+let createTable = () => {
   $.get('/games/new', function (result) {
     console.log('Got my ajax request', result)
   })
@@ -15,8 +16,10 @@ let createTable = ()=>{
 //
 
 $(document).ready(function(){
-    var turnCount=0;
+  var turnCount=0;
 
+  let g = new Game()
+  console.log('g.board', g.board)    
 
       $('.board').find('td').click(function(){
         if ($(this).html() === "") {
@@ -111,7 +114,7 @@ $(document).ready(function(){
         //       $('#newGame').removeClass('invisible');
       }
     $('#newGame').click(function(){
-        $('.square').html('');    
+        $('.square').html('');
     });
 
 });

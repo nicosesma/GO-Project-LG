@@ -1,10 +1,38 @@
 "use strict";
 
-$(document).ready(function(){
-  $('.ai').click(function(){
-      $('.square').html('');
-  });
-});
+class Game {
+  constructor() {
+    this.board = '.........'
+    this.xNext = true // this could even actually be a function instead
+  }
+
+  place(position) {
+    // (position is 0-8)
+    // MAYBE check if move is valid i.e. square is free - or maybe you trust the UI
+    // you know what to place by using this.xNext
+    // at the end, make sure you flip this.xNext
+  }
+
+  bestMove() {
+    // count each of the 8 available lines
+    // count your pieces vs opponent's
+      // if 2-0 for you, win
+      // if 0-2, block immediately
+      // if multiple 0-1s, choose (randomly?) between them and block
+      // otherwise choose between your 1-0s
+  }
+
+  zeroPlayer() {
+    // actually simulate the game
+    // write a very simplistic bestMove - first available square?? - so you can test this
+    // have fun with it
+  }
+
+  gameOver() {
+    // return true if no . in this.board
+  }
+}
+
 
 var human = 'x'; // turn = 0
 var computer = 'o'; // turn = 1
