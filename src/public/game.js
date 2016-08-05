@@ -12,6 +12,7 @@ class Game {
   constructor() {
     this.board = '.........'
     this.xNext = true // this could even actually be a function instead
+    this.moveHistory = []
   }
 
   xo() {
@@ -21,6 +22,7 @@ class Game {
   place(position) {
     // MAYBE check if move is valid i.e. square is free - or maybe you trust the UI
     this.board = this.board.replaceAt(position, this.xo())
+    this.moveHistory.push(position)
     this.xNext = !this.xNext
   }
 
@@ -53,8 +55,10 @@ class Game {
   }
 
   gameOver() {
-    if (this.board !== ".........") {
+    if (this.board.indexOf('.') === -1) {
       return true
+    } else {
+      return false
     }
   }
 }

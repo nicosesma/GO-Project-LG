@@ -7,11 +7,12 @@ html
     link(rel='stylesheet', type='text/css', href='styles.css')
 
   body
-    | Welcome to Tic Tac Toe!
-    div(style='text-align:center;')
-            button.ai AI!
-    div
-      h4.score
-    div
-      h4.scoreBoard
+    include ./includes/nav.pug
+    h3 Welcome to Tic Tac Toe!
+    p
+      span You are in 
+      span#mode 0
+      span -player mode
+    h4.score
+    h4.scoreBoard
     include ./includes/board.pug

@@ -30,10 +30,12 @@ describe('Game', () => {
     g.autoPlay()
     expect(g.board).toEqual('XOXOXOXOX')
   })
+
   it('#gameOver stops when board is full', () => {
     let g = new Game()
-    g.gameOver()
-    expect(g.board)!==('.........')
+    g.board = 'XOXOXOXOX'
+    expect(g.gameOver()).toEqual(true)
+    g.board = 'XOXOXOXO.'
+    expect(g.gameOver()).toEqual(false)
   })
-
 })

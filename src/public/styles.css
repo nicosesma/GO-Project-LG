@@ -1,3 +1,6 @@
+a {
+  text-decoration: none;
+}
 /*.square {
   color: red;
 }*/
@@ -76,5 +79,13 @@ table {
 body {
   text-align: center;
   font-family: helvetica;
-  font-size: 3em;
+}
+
+.nav {
+  background-color: yellow;
+  border: 1px solid blue;
+  display: inline;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
 }
