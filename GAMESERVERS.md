@@ -15,12 +15,14 @@
 
 #VALUES/PRINCIPLES
 - [ ] Restrict user's choices - too many options complicate the user interaction with the game.
-- [ ] Landing page - board - or two buttons (1p or 2p)
-- [ ] We recognize that the the better design would be to have an additional landing page, but time did not allow us to carry this out
+- [ ] Design principle: access to the game servers should be on a corner of the screen.
 - [ ] What would the user want(game server) vs how would the user want it(clear directions)
 - [ ] Simplicity
 - [ ] Familiar feel
-- [ ] What sets us apart?
+- [ ] Decide on one way to implement a game server, or a combination of tools.
+  - [ ] Websockets & node.js
+  - [ ] Unity
+  - [ ] Smart Fox Server - maybe for a super tic tac toe game 
 
 #RESOURCES
 - [ ] Database choice
