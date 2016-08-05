@@ -28,7 +28,7 @@ A [Tic-Tac_Toe](https://en.wikipedia.org/wiki/Go_(game)) game can be implemented
 - [x] Build a node starter app from the ground up for future project use
 - [x] Outline how we created the design interface
 - [ ] Build and implement a difficult AI opponnent 
-- [ ] Need to define rules of the game and how to win (for AI)
+- [x] Need to define rules of the game and how to win (for AI)
 - [x] Feature a replay button
 - [ ] Create a scoring system that keeps track of games won by human and AI opponnents
 - [x] Using ES2015 and writing tests
