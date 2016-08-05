@@ -24,20 +24,20 @@ A [Tic-Tac_Toe](https://en.wikipedia.org/wiki/Go_(game)) game can be implemented
 
 ## Specifications
 
-- [ ] reverse engineer [Tic-Tac-Toe](https://en.wikipedia.org/wiki/Tic-tac-toe) into a complete set of users stories
-- [ ] Build a node starter app from the ground up for future project use
-- [ ] Outline how we created the design interface
+- [x] reverse engineer [Tic-Tac-Toe](https://en.wikipedia.org/wiki/Tic-tac-toe) into a complete set of users stories
+- [x] Build a node starter app from the ground up for future project use
+- [x] Outline how we created the design interface
 - [ ] Build and implement a difficult AI opponnent 
 - [ ] Need to define rules of the game and how to win (for AI)
-- [ ] Feature a replay button
+- [x] Feature a replay button
 - [ ] Create a scoring system that keeps track of games won by human and AI opponnents
-- [ ] Using ES2015 and writing tests
-- [ ] Research and document how we would implement a multi-game server.
-- [ ] The artifact produced is properly licensed, preferably with the [MIT license][mit-license].
+- [x] Using ES2015 and writing tests
+- [x] Research and document how we would implement a multi-game server.
+- [x] The artifact produced is properly licensed, preferably with the [MIT license][mit-license].
 
 ### Quality
 
-- [ ] clear separation of game logic code from view/rendering code
+- [x] clear separation of game logic code from view/rendering code
 
 ---
 
