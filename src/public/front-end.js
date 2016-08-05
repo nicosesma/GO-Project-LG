@@ -41,21 +41,21 @@ $(document).ready(function(){
         if ($('.board').find('#1').html() !== ''){
             if ($('.board').find('#1').html() == $('.board').find('#2').html()) {
                 if ($('.board').find('#1').html() == $('#3').html()) {
-                    alert('Game over! '+player+' is the winner!');
+                    $('.score').html('Game over! '+player+' is the winner!');
                     $('#newGame').removeClass('invisible');
                 }
             }
         //left column check
             if ($('.board').find('#1').html() == $('.board').find('#4').html()) {
                 if ($('.board').find('#1').html() == $('#7').html()) {
-                    alert('Game over! '+player+' is the winner!');
+                    $('.score').html('Game over! '+player+' is the winner!');
                     $('#newGame').removeClass('invisible');
                 }
             }
         //left diagonal check
             if ($('.board').find('#1').html() == $('.board').find('#5').html()) {
                 if ($('.board').find('#1').html() == $('#9').html()) {
-                    alert('Game over! '+player+' is the winner!');
+                    $('.score').html('Game over! '+player+' is the winner!');
                     $('#newGame').removeClass('invisible');
                 }
             }
@@ -65,7 +65,7 @@ $(document).ready(function(){
         if ($('.board').find('#2').html() !== ''){
             if ($('.board').find('#2').html() == $('.board').find('#5').html()) {
                 if ($('.board').find('#2').html() == $('#8').html()) {
-                    alert('Game over! '+player+' is the winner!');
+                    $('.score').html('Game over! '+player+' is the winner!');
                     $('#newGame').removeClass('invisible');
                 }
             }
@@ -75,14 +75,14 @@ $(document).ready(function(){
         if ($('.board').find('#3').html() !== ''){
             if ($('.board').find('#3').html() == $('.board').find('#6').html()) {
                 if ($('.board').find('#3').html() == $('#9').html()) {
-                    alert('Game over! '+player+' is the winner!');
+                    $('.score').html('Game over! '+player+' is the winner!');
                     $('#newGame').removeClass('invisible');
                 }
             }
             //right diag check
             if ($('.board').find('#3').html() == $('.board').find('#5').html()) {
                 if ($('.board').find('#3').html() == $('#7').html()) {
-                    alert('Game over! '+player+' is the winner!');
+                    $('.score').html('Game over! '+player+' is the winner!');
                     $('#newGame').removeClass('invisible');
                 }
             }
@@ -93,7 +93,7 @@ $(document).ready(function(){
         if ($('.board').find('#4').html() !== ''){
             if ($('.board').find('#4').html() == $('.board').find('#5').html()) {
                 if ($('.board').find('#4').html() == $('#6').html()) {
-                    alert('Game over! '+player+' is the winner!');
+                    $('.score').html('Game over! '+player+' is the winner!');
                     $('#newGame').removeClass('invisible');
                 }
             }
@@ -103,7 +103,7 @@ $(document).ready(function(){
         if ($('.board').find('#7').html() !== ''){
             if ($('.board').find('#7').html() == $('.board').find('#8').html()) {
                 if ($('.board').find('#7').html() == $('#9').html()) {
-                    alert('Game over! '+player+' is the winner!');
+                    $('.score').html('Game over! '+player+' is the winner!');
                     $('#newGame').removeClass('invisible');
                 }
             }
@@ -115,6 +115,13 @@ $(document).ready(function(){
       }
     $('#newGame').click(function(){
         $('.square').html('');
+        $('.score').html('');
+        $('.scoreNumber').html(+ 1); //have to figure out how to define this function and actually tally the scores of all players.
     });
-
+    // function scoreBoard(checkVictory(player) {
+    //   if checkVictory(player) {
+    //     playerScore = scoreBoard()
+    //     playerScore ++;
+    //   }
+    // });
 });
