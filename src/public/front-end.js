@@ -29,7 +29,32 @@ const ZeroPlayerMode = () => {
   console.log('g.moveHistory', g.moveHistory)
   // give it a random pause between .5 and 2 seconds
   g.moveHistory.forEach(m => {
-    
+    $('#1').html('X')
+    setTimeout(function(){
+      $('#2').html('O')
+      setTimeout(function(){
+        $('#3').html('X')
+        setTimeout(function(){
+          $('#4').html('O')
+          setTimeout(function(){
+            $('#5').html('X')
+            setTimeout(function(){
+              $('#6').html('O')
+              setTimeout(function(){
+                $('#7').html('O')
+                setTimeout(function(){
+                  $('#8').html('')
+                  setTimeout(function(){
+                    $('#9').html('X')
+                    $('.score').html('Game over! X is the winner!')
+                  }, 660)
+                }, 780)
+              }, 800)
+            }, 600)
+          }, 800)
+        }, 700)
+      }, 900)
+    }, 1200)
   })
 }
 
@@ -126,19 +151,20 @@ function checkVictory(player) {
   //       $('#newGame').removeClass('invisible')
 }
 
-function scoreBoard(score) {
-  $.get(score = this.score)
-  console.log('ScoreBoard created')
-}
-
-scoreBoard.prototype.addPoint = function(score) {
-  console.log(this.checkVictory + 1)
-}
+// function scoreBoard(score) {
+//   $.get(score = this.score)
+//   console.log('ScoreBoard created')
+// }
+//
+// scoreBoard.prototype.addPoint = function(score) {
+//   console.log(this.checkVictory + 1)
+// }
 
 function addListenerToclearTheBoard() {
   $('#newGame').click(function() {
     $('.square').html('')
     $('.score').html('')
-    $('.scoreBoard').html(scoreBoard(this.score)) //have to figure out how to define this function and
+    $('#mode').html(' 2')
+    // $('.scoreBoard').html(scoreBoard(this.score)) //have to figure out how to define this function and
   })
 }
