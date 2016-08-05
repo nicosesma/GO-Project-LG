@@ -113,10 +113,18 @@ $(document).ready(function(){
         //       alert('Game over!  YOU BOTH LOSE!!');
         //       $('#newGame').removeClass('invisible');
       }
+    let scoreBoard = function(score) {
+      $.get(score = this.score);
+      console.log('ScoreBoard created');
+    };
+    scoreBoard.prototype.addPoint = function(score) {
+      console.log(this.checkVictory + 1);
+    };
+
     $('#newGame').click(function(){
         $('.square').html('');
         $('.score').html('');
-        $('.scoreNumber').html(+ 1); //have to figure out how to define this function and actually tally the scores of all players.
+        $('.scoreBoard').html(scoreBoard(this.score)); //have to figure out how to define this function and actually tally the scores of all players.
     });
     // function scoreBoard(checkVictory(player) {
     //   if checkVictory(player) {
