@@ -1,11 +1,13 @@
 "use strict"
 
+let xPlayerMode = 0
+
 $(document).ready(function(){
-  let xPlayerMode = 0
   ZeroPlayerMode()
 
   addListenerToclearTheBoard()
   addNavListeners()
+
   var turnCount = 0
 
   $('.board').find('td').click(function(){
@@ -24,7 +26,7 @@ $(document).ready(function(){
 })
 
 const ZeroPlayerMode = () => {
-  let g = new Game()
+  let g = changeMode(0)
   g.autoPlay()
   console.log('g.moveHistory', g.moveHistory)
   // give it a random pause between .5 and 2 seconds
@@ -60,18 +62,47 @@ const ZeroPlayerMode = () => {
   })
 }
 
+const OnePlayerMode = () => {
+  let g = changeMode(1)
+  
+}
+
+const TwoPlayerMode = () => {
+  let g = changeMode(2)
+
+  $('.square').html('')
+  $('.score').html('')
+  $('#mode').html(' 2')
+  // $('.scoreBoard').html(scoreBoard(this.score)) //have to figure out how to define this function and
+}
+
+const changeMode = (numPlayers) => {
+  console.log('Changing mode to...', numPlayers)
+  xPlayerMode = numPlayers
+  let g = new Game()
+  $('#mode').html(numPlayers)
+  $('td').each(function(){
+    $(this).html('')
+  })
+  
+  // empty out cells
+  // stop stuff from happening??
+  return g
+}
+
 const addNavListeners = () => {
+  console.log('Adding Nav Listeners...')
   $('#0-player').click(function(e) {
     e.preventDefault()
-    console.log('You clicked on #0-player!!!')
+    ZeroPlayerMode()
   })
   $('#1-player').click(function(e) {
     e.preventDefault()
-    console.log('You clicked on #1-player!!!')
+    OnePlayerMode()
   })
   $('#2-player').click(function(e) {
     e.preventDefault()
-    console.log('You clicked on #2-player!!!')
+    TwoPlayerMode()
   })
 }
 
@@ -163,10 +194,6 @@ function checkVictory(player) {
 // }
 
 function addListenerToclearTheBoard() {
-  $('#newGame').click(function() {
-    $('.square').html('')
-    $('.score').html('')
-    $('#mode').html(' 2')
-    // $('.scoreBoard').html(scoreBoard(this.score)) //have to figure out how to define this function and
-  })
+  $('#newGame').click(TwoPlayerMode)
 }
+
