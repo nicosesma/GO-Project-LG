@@ -15,10 +15,6 @@ app.get('/', function (req, res) {
   res.render('index');
 });
 
-// app.listen(process.env.PORT, function () {
-//   console.log('Example app listening on port 3000!');
-// });
-
 app.get('/games/new', function (req, res) {
   console.log('Hitting /board/new')
   let b = new Board()

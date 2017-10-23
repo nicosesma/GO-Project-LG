@@ -1,20 +1,6 @@
 a {
   text-decoration: none;
 }
-/*.square {
-  color: red;
-}*/
-
-/*.board {
-  border: solid 2px;
-}*/
-
-/*.container {
-  display: flex;
-  flex-position: center;
-  display: - webkit-flex;
-  align-content: center;
-}*/
 
 @keyframes tanimate {
   0%   {
@@ -54,18 +40,10 @@ a {
     justify-content: center;
 }
 
-/*#board {
-    display: inline-block;
-    margin-top: 2%;
-    display: flex;
-    align-content: center;
-}*/
-
 table {
     background-color: #FAFAFA;
     text-align: center;
-    font: 400 30px/1.5 'Pacifico', Helvetica, sans-serif;
-    /*align-content: center;*/
+    font: 400 30px/1.5 'SF Pro', Helvetica, sans-serif;
 }
 
 .invisible {
@@ -78,11 +56,11 @@ table {
 
 body {
   text-align: center;
-  font-family: helvetica;
+  font-family: 'SF Pro', helvetica;
 }
 
 .nav {
-  background-color: yellow;
+  background-color: #42b3f4;
   border: 1px solid blue;
   display: inline;
   margin: 10px;
