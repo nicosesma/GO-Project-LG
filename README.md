@@ -17,27 +17,10 @@ A [Tic-Tac_Toe](https://en.wikipedia.org/wiki/Go_(game)) game can be implemented
 
 ## User Stories
 
-- [ ] Bob wants to play Tic-Tac-Toe with a beautiful UI that is responsive and elegant
-- [ ] Bob wants to be able to choose who starts whether another player or the AI
-- [ ] Bob wants a difficult AI opponnent but not an impossible one
-- [ ] Bob wants with his friends either cross-country or internationally
-
-## Specifications
-
-- [x] reverse engineer [Tic-Tac-Toe](https://en.wikipedia.org/wiki/Tic-tac-toe) into a complete set of users stories
-- [x] Build a node starter app from the ground up for future project use
-- [x] Outline how we created the design interface
-- [ ] Build and implement a difficult AI opponnent 
-- [x] Need to define rules of the game and how to win (for AI)
-- [x] Feature a replay button
-- [ ] Create a scoring system that keeps track of games won by human and AI opponnents
-- [x] Using ES2015 and writing tests
-- [x] Research and document how we would implement a multi-game server.
-- [x] The artifact produced is properly licensed, preferably with the [MIT license][mit-license].
-
-### Quality
-
-- [x] clear separation of game logic code from view/rendering code
+- Bob wants to play Tic-Tac-Toe with a beautiful UI that is responsive and elegant
+- Bob wants to be able to choose who starts whether another player or the AI
+- Bob wants a difficult AI opponnent but not an impossible one
+- Bob wants with his friends either cross-country or internationally
 
 ---
 
